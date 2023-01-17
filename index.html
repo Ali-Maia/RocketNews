@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -14,32 +15,54 @@
 </head>
 
 <body>
-    <header>
-        <div id="logo">
-            <h1><img src="./assets/assets/logo.svg" alt="logo RocketNews"></h1>
-        </div>
-    </header>
+    <div id="container">
+        <header>
+            <div id="logo">
+                <h1><img src="./assets/assets/logo.svg" alt="logo RocketNews"></h1>
+            </div>
+        </header>
 
-    <main>
-        <div id="text">
-            <h2>atualize as ideias e informações em 5 minutos.</h2>
-            <strong>tudo que você precisa saber para começar seu dia bem e informado</strong>
-            <p>noticias sobre o universo Rocketseat, e tudo o que precisa para começar o dia melhor.
-                perfeito para se preparar para codar ☕</p>
-        </div>
-        <div id="form">
-            <label for="pegarEmail">Insira seu email</label>
-            <input type="email" name="pegarEmail" id="email">
-            <button><img src="./assets/assets/send.svg" alt=""></button>
-        </div>
-    </main>
+        <main>
+            <div id="text">
+                <h2>atualize as ideias e informações em 5 minutos.</h2>
+                <strong>tudo que você precisa saber para começar seu dia bem e informado</strong>
+                <p>noticias sobre o universo Rocketseat, e tudo o que precisa para começar o dia melhor.
+                    perfeito para se preparar para codar ☕</p>
+            </div>
+            <div id="form">
+                <div id="emailName">
+                    <label for="pegarEmail">Insira seu email: </label> <br>
+                </div>
+                <div id="emailBox">
+                    <div id="rectangle"></div>
+                    <input type="email" name="pegarEmail" value="oi@rocketseat.com" id="email">
+                    <button type="submit">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" id="sendImg">
+                            <path d="M22 2L11 13" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                            <path d="M22 2L15 22L11 13L2 9L22 2Z" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </main>
 
-    <footer>
-        <div id="link">
-            <a href="http://">deixe-me ler primeiro <img src="./assets/assets/arrow-right.svg" alt=""></a>
-        </div>
-    </footer>
+        <footer>
+            <div id="link">
+                <a href="http://">
+                    <p>deixe-me ler primeiro</p>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-arrow-right">
+                        <polyline points="12 5 19 12 12 19"></polyline>
+                        <line x1="5" y1="12" x2="19" y2="12"></line>
+                    </svg>
+                </a>
+            </div>
+        </footer>
+    </div>
 
-    <img src="./assets/assets/read_news.jpg" alt="">
+    <div id="bg-img">
+        <img src="./assets/assets/read_news.jpg" alt="">
+    </div>
+
 </body>
+
 </html>

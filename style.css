@@ -1,17 +1,127 @@
 :root {
-    --body-bg-color: #121214;
-    --text-color: #E1E1E6;
-    --title-color: #04D361;
-    --form-color: #A8A8A8;
-    --bg-button-color: #8257e5;
-  }
+  --body-bg-color: #121214;
+  --text-color: #e1e1e6;
+  --title-color: #04d361;
+  --form-color: #a8a8a8;
+  --bg-button-color: #8257e5;
+}
+* {
+  margin: 0px;
+  padding: 0px;
+  border: 0px;
+}
 
 body {
-    background-color: #121214;
-    font-family: 'League Spartan', sans-serif;
+  display: flex;
+  position: relative;
+  margin: 0px;
+
+  background-color: #121214;
+  font-family: "League Spartan", sans-serif;
+}
+#container {
+  position: absolute;
+  width: 720px;
+  height: 784px;
+
+  margin: 0px 0px 0px 36px;
+
+  background: #121214;
+}
+#bg-img {
+  padding-left: 376px;
+}
+#bg-img img {
+  width: 1175px;
+  height: 784px;
 }
 
-h2 {
-    font-family: 'Work Sans', sans-serif;
+#logo {
+  margin: 50px 0px 92px -6px;
 }
 
+#logo img {
+  width: 389px;
+  height: 94px;
+  left: 30px;
+  top: 50px;
+}
+
+#text {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 647px;
+  height: 102px;
+  color: #e1e1e6;
+}
+
+#text h2 {
+  font-family: "Work Sans", sans-serif;
+  color: #04d361;
+}
+#text,
+#form {
+  margin-bottom: 50px;
+}
+
+#emailBox {
+  display: flex;
+  position: absolute;
+  filter: drop-shadow(4px 10px 15px rgba(0, 0, 0, 0.5));
+}
+
+#form {
+  align-items: center;
+  color: #a8a8a8;
+}
+#form #emailName {
+  margin-bottom: 17px;
+}
+#emailName {
+  font-weight: bold;
+  line-height: 19px;
+}
+#rectangle {
+  width: 5px;
+  height: 48px;
+
+  background: #04d361;
+}
+#email {
+  width: 745px;
+  padding: 0px 0px 0px 10px;
+  font-family: "Work Sans", sans-serif;
+  color: #6a6a6a;
+}
+
+#form button {
+  background-color: #8257e5;
+  width: 48px;
+  height: 48px;
+}
+
+#form button #sendImg {
+  margin: auto;
+}
+#link {
+  margin-top: 98px;
+  width: 180px;
+  height: 24px;
+}
+
+#link a p {
+  width: 167px;
+  height: 19px;
+  margin: 0 5px 0 0;
+  font-style: normal;
+}
+#link a,
+#sendImg {
+  display: flex;
+  align-items: center;
+
+  text-decoration: none;
+  font-weight: bold;
+  color: #8257e5;
+}
